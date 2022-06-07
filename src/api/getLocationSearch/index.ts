@@ -2,10 +2,10 @@ import request from '../request';
 import { Error, LocationResults } from './getLocationSearch.types';
 
 
-const getLocationSearch = async (numberOfRows: number,
+export const getLocationSearch = async (numberOfRows: number,
   searchTerm: string,
 ): Promise<LocationResults | Error | undefined> => {
-  const searchLocationURI = `&solrRows=${numberOfRows}&solrTerm=${searchTerm}`;
+  const searchLocationURI = `FTSAutocomplete.do?solrIndex=fts_en&solrRows=${numberOfRows}&solrTerm=${searchTerm}`;
 
   return await request('GET', searchLocationURI, {})
     .then((response) => {
@@ -23,4 +23,3 @@ const getLocationSearch = async (numberOfRows: number,
     });
 };
 
-export default getLocationSearch;

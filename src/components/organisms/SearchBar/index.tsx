@@ -5,7 +5,7 @@ interface Props {
   onClick: () => void;
 }
 
- const SearchBar: React.FC<Props> = ({ label, onClick }) => {
+ const SearchBar: React.FC<Props> = () => {
   return (
     <Wrapper>Cheese</Wrapper>
   );
