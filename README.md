@@ -40,7 +40,7 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ## Http Requests
 
-[Axios](https://www.npmjs.com/package/axios) was used for Http requests. The base url for the search endpoint is stored in the env file. **Have included an example env in the repo, but this would not normally be pushed to the repo!**. The URL of this endpoint is
+[Axios](https://www.npmjs.com/package/axios) was used for Http requests. The base url for the search endpoint is stored in the env file. **Have included an example env in the repo, but this would not normally be pushed to the repo!**. The URL of this endpoint is shttps://www.rentalcars.com/FTSAutocomplete.do.
 
 ### To Do
 
@@ -53,6 +53,10 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 - [ ] SEO for page using React Helmet
 - [ ] Fetch search data when 2 or more characters are entered and use endpoint https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows={numberRow}&solrTerm={searchTerm}
 
+### Done
+
+- [x] Basic setup of project including atomic structure and ensure components are in dev 
+- [x] Setup up linting rules (ESLINT and Prettier) and precommit hook
 
 
 ## Testing
