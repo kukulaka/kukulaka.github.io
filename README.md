@@ -44,15 +44,11 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ### To Do
 
-- [ ] Create Button Atom
-- [ ] Create Textbox search atom 
-- [ ] Create search button
-- [ ] Restructure project to make sure storybook def and tests are at component level
+- [ ] search results undernead the input
 - [ ] Styling of components as per [Rental Cars Live site](https://rentalcars.com)
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
 - [ ] Tests for components
-- [ ] SEO for page using React Helmet
-- [ ] Fetch search data when 2 or more characters are entered and use endpoint https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows={numberRow}&solrTerm={searchTerm}
+
 
 ### Done
 
@@ -60,6 +56,17 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 - [x] Setup up linting rules (ESLINT and Prettier) and precommit hook
 - [x] Basic SEO setup using metadata in header `public/index.html` and a v.basic site map
 - [x] Create function that can be used to fetch data from endpoint
+- [x] Create Textbox search atom 
+- [x] Restructure project to make sure storybook def and tests are at relevent levels
+- [x] Fetch search data when 2 or more characters are entered and use endpoint https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows={numberRow}&solrTerm={searchTerm}
+- [x] show max 6 search results
+
+
+### Other notes
+I should have used MUI for the input as this would have been much quicker to impliment.
+My implimentation is a little janky as the child div resizes the search container on focus :sad_face:
+Testing needs to be expanded upon for coverage of all components. Again, I did not have time to impliment this. 
+Should DEFINETLY Mock the API call, but again, did not have time. 
 
 
 ## Testing

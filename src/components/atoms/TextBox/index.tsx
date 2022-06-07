@@ -1,30 +1,28 @@
 import React, { useState, InputHTMLAttributes, useEffect } from 'react';
 import { getLocationSearch } from '../../../api/getLocationSearch';
-
-import { Label, StyledInput } from './TextBox.styled';
+import  {LocationResults, Error} from '../../../api/getLocationSearch/getLocationSearch.types'
+import { Label, StyledInput, InputWrapper } from './TextBox.styled';
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
-  hide: boolean;
 }
 
 const TextBox: React.FC<IProps> = ({ label }) => {
   const [hide, setHide] = useState<boolean>(true);
   const [searchTerm, setSearchTerm] = useState<string>('');
-  const [loading, setLoading] = useState<boolean>(false);
-  const [locations, setLocations] = useState<object>({});
+ // const [loading, setLoading] = useState<boolean>(false);
+  const [locations, setLocations] = useState<LocationResults | Error | undefined>(undefined);
 
   const getLocations = async () => {
-    const locations = await getLocationSearch(5, searchTerm);
+    const locations = await getLocationSearch(6, searchTerm);
     setLocations(locations);
   };
 
   const updateLocations = () => {
-    setLoading(true);
-    // also put at time on here so api doesn't get spammed every time something changes
-    // I went for 3 secs but could be another value
+   // setLoading(true);
+  
     getLocations();
-    setLoading(false);
+   // setLoading(false);
   };
 
   //as this is only a simple project + save time API call is at this level.
@@ -33,6 +31,10 @@ const TextBox: React.FC<IProps> = ({ label }) => {
 
   useEffect(() => {
     if (searchTerm.length >= 2) {
+
+    // also put at time on here so api doesn't get spammed every time something changes
+    // I went for 3 secs but could be another value
+
       const timer = setTimeout(() => updateLocations(), 3000);
       return () => clearTimeout(timer);
     }
@@ -42,15 +44,15 @@ const TextBox: React.FC<IProps> = ({ label }) => {
     console.log(locations);
   }, [locations]);
 
-  const handleChange = e => {
+  const handleChange = (e: any) => {
     setSearchTerm(e.target.value);
   };
 
   return (
-    <>
+    <InputWrapper>
       <Label htmlFor={label} aria-hidden={true} hiddenLabel={hide}>
         {label}
-      </Label>
+        </Label>
       <StyledInput
         id="searchbox-toolbox-fts-pickup"
         data-testid="searchbox-toolbox-fts-pickup"
@@ -68,7 +70,7 @@ const TextBox: React.FC<IProps> = ({ label }) => {
           searchTerm ? setHide(false) : setHide(true);
         }}
       />
-    </>
+    </InputWrapper>
   );
 };
 

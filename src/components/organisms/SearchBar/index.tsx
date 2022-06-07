@@ -1,14 +1,20 @@
 import React from 'react';
-import {Wrapper } from './SearchBar.styled';
-interface Props {
-  label: string;
-  onClick: () => void;
-}
+import { Wrapper, SearchWrapper, IconWrapper } from './SearchBar.styled';
+import { SearchIcon, TextBox } from '../../atoms';
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface Props {}
 
- const SearchBar: React.FC<Props> = () => {
+const SearchBar: React.FC<Props> = () => {
   return (
-    <Wrapper>Cheese</Wrapper>
+    <Wrapper>
+      <SearchWrapper>
+        <IconWrapper>
+        <SearchIcon />
+        </IconWrapper>
+        <TextBox label="Pick-up Location" />
+      </SearchWrapper>
+    </Wrapper>
   );
 };
 
-export default SearchBar
+export default SearchBar;

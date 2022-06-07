@@ -1,15 +1,16 @@
+import styled from 'styled-components';
 
-import React from 'react';
-import styled,  { StyledFunction }  from 'styled-components';
+interface LabelProps {
+  hiddenLabel: boolean;
+}
 
-
-interface LabelProps { hiddenLabel: boolean }
-
-
-
+export const InputWrapper = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Label = styled.label<LabelProps>`
- 
   color: #474747;
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, sans-serif;
@@ -18,8 +19,7 @@ export const Label = styled.label<LabelProps>`
   line-height: 16px;
   margin-botton: 2px;
 
-  display: ${(p: LabelProps)  => p.hiddenLabel ? 'none' : 'block'};
-
+  display: ${(p: LabelProps) => (p.hiddenLabel ? 'none' : 'inline')};
 `;
 
 export const StyledInput = styled.input`
@@ -36,6 +36,7 @@ export const StyledInput = styled.input`
   ::placeholder,
   ::-webkit-input-placeholder {
     font-size: 16px;
+    font-weight: 500;
     color: #474747;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
       Arial, sans-serif;
@@ -53,7 +54,7 @@ export const StyledInput = styled.input`
   }
 
   &:focus {
-    outline:none;
+    outline: none;
 
     ::placeholder,
     ::-webkit-input-placeholder {
