@@ -51,11 +51,12 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
 - [ ] Tests for components
 - [ ] SEO for page using React Helmet
-- [ ] Fetch search data when 2 or more characters are entered and use endpoint 
+- [ ] Fetch search data when 2 or more characters are entered and use endpoint https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows={numberRow}&solrTerm={searchTerm}
 
 
 
-##
+## Testing
+These can be found in the relevent component. Tests can be run using yarn test and yarn test:watch. Jest to run tests and Enzyme for mocking. 
 
 ## Available Scripts
 
@@ -72,7 +73,7 @@ You will also see any lint errors in the console.
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React in production mode and optimizes the build for the best performance. This folder is also used for deployment to Github pages
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
