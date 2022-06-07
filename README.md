@@ -40,7 +40,7 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ## Http Requests
 
-[Axios](https://www.npmjs.com/package/axios) was used for Http requests. The base url for the search endpoint is stored in the env file. **Have included an example env in the repo, but this would not normally be pushed to the repo!**. The URL of this endpoint is shttps://www.rentalcars.com/FTSAutocomplete.do.
+[Axios](https://www.npmjs.com/package/axios) was used for Http requests. The base url for the search endpoint is stored in the env file. **Have included an example env in the repo, but this would not normally be pushed to the repo!**. The URL of this endpoint is https://www.rentalcars.com/FTSAutocomplete.do.
 
 ### To Do
 
