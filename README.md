@@ -49,6 +49,7 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
 - [ ] Tests for ALL components and mock API call. 
 - [ ] loading icon to be added to `SearchBar` Component to show fetch is in progress.
+- [ ] Add React Helmet for more SEO goodness.
 
 
 ### Done
@@ -65,7 +66,7 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 
 ### Other notes
--I should have used MUI for the input as this would have been much quicker to impliment. My implimentation is a little janky as the child div resizes the search container on focus :sad_face:
+-I should have used MUI for the input as this would have been much quicker to impliment. My implimentation is a little janky as the child div resizes the search container on focus :disappointed:
 - Testing needs to be expanded upon for coverage of all components. Again, I did not have time to impliment this. 
 Should DEFINETLY Mock the API call, but again, did not have time. 
 - Due to time contrainsts have not implemented the dropdown list in the correct place. This should be in the `SearchBar` component so it will appear under this element
