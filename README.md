@@ -44,10 +44,11 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ### To Do
 
-- [ ] search results undernead the input
-- [ ] Styling of components as per [Rental Cars Live site](https://rentalcars.com)
+- [ ] Refactor `TextBox` amd `SearchBar` so results appear underneath `SearchBar` Component
+- [ ] Styling of components as per [Rental Cars Live site](https://rentalcars.com) (This is mostly due to the refactor above)
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
-- [ ] Tests for components
+- [ ] Tests for ALL components and mock API call. 
+- [ ] loading icon to be added to `SearchBar` Component to show fetch is in progress.
 
 
 ### Done
@@ -59,14 +60,16 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 - [x] Create Textbox search atom 
 - [x] Restructure project to make sure storybook def and tests are at relevent levels
 - [x] Fetch search data when 2 or more characters are entered and use endpoint https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows={numberRow}&solrTerm={searchTerm}
+- [x] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
 - [x] show max 6 search results
 
 
 ### Other notes
-I should have used MUI for the input as this would have been much quicker to impliment.
-My implimentation is a little janky as the child div resizes the search container on focus :sad_face:
-Testing needs to be expanded upon for coverage of all components. Again, I did not have time to impliment this. 
+-I should have used MUI for the input as this would have been much quicker to impliment. My implimentation is a little janky as the child div resizes the search container on focus :sad_face:
+- Testing needs to be expanded upon for coverage of all components. Again, I did not have time to impliment this. 
 Should DEFINETLY Mock the API call, but again, did not have time. 
+- Due to time contrainsts have not implemented the dropdown list in the correct place. This should be in the `SearchBar` component so it will appear under this element
+ Need to refactor but do not have time. 
 
 
 ## Testing

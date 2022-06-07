@@ -4,7 +4,7 @@ import Header from './index'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Atoms/Header Logo',
+  title: '1. Atoms/Header Logo',
   component: Header,
 } as ComponentMeta<typeof Header>;
 

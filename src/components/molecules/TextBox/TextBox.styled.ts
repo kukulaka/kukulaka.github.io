@@ -9,6 +9,12 @@ export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+export const InputContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ ;
+`;
 
 export const Label = styled.label<LabelProps>`
   color: #474747;

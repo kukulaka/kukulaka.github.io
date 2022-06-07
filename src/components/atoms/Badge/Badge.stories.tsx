@@ -4,7 +4,7 @@ import Badge from './index'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Atoms/Badge ',
+  title: '1. Atoms/Badge ',
   component: Badge,
 } as ComponentMeta<typeof Badge>;
 

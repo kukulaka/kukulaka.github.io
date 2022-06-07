@@ -4,7 +4,7 @@ import SearchBar from './index'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Organisms /Search Travel Bar',
+  title: '3. Organisms /Search Travel Bar',
   component: SearchBar,
 } as ComponentMeta<typeof SearchBar>;
 

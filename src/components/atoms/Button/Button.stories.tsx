@@ -4,7 +4,7 @@ import Button from './index'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Atoms/Button',
+  title: '1. Atoms/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 

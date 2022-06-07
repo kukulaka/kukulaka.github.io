@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import TextBox from './index'
 
 export default {
-  title: 'Atoms/Text Box',
+  title: '2. Molecules/Text Box',
   component: TextBox,
 } as ComponentMeta<typeof TextBox>;
 

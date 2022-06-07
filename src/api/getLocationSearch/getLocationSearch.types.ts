@@ -5,7 +5,7 @@ export interface Error {
   errorMsg: string | null;
 }
 
-interface doc {
+export interface Doc {
   country?: string;
   lng?: number;
   city?: string;
@@ -28,7 +28,7 @@ interface doc {
 
 interface Results {
   isGooglePowered: boolean;
-  docs: doc[];
+  docs: Doc[];
   numFound: number;
 }
 
