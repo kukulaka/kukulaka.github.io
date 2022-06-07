@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { base } from './themes';
 
-function App() {
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface IProps {}
+
+const App: React.FC<IProps> = () => {
+  const theme = { ...base };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div> holder until component ready</div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

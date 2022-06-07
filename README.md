@@ -44,8 +44,7 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ### To Do
 
-- [ ] Basic setup of project including atomic structure and ensure components are in dev 
-- [ ] Setup up linting rules (ESLINT and Prettier) and precommit hook
+
 - [ ] Restructure project to make sure storybook def and tests are at component level
 - [ ] Styling of components as per [Rental Cars Live site](https://rentalcars.com)
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
@@ -57,6 +56,8 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 - [x] Basic setup of project including atomic structure and ensure components are in dev 
 - [x] Setup up linting rules (ESLINT and Prettier) and precommit hook
+- [x] Basic SEO setup using metadata in header `public/index.html` and a v.basic site map
+- [x] Create function that can be used to fetch data from endpoint
 
 
 ## Testing
@@ -86,7 +87,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn deploy`
 
-This deploys the project to [https://kukulaka.github.io/](https://kukulaka.github.io).
+This deploys the project to [https://kukulaka.github.io/](https://kukulaka.github.io) from `/build`.
 
 ### `yarn storybook`
 This runs the storbook instance at Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
