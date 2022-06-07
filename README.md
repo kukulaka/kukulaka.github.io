@@ -44,7 +44,9 @@ The project structure follows [Atomic design structure](https://andela.com/insig
 
 ### To Do
 
-
+- [ ] Create Button Atom
+- [ ] Create Textbox search atom 
+- [ ] Create search button
 - [ ] Restructure project to make sure storybook def and tests are at component level
 - [ ] Styling of components as per [Rental Cars Live site](https://rentalcars.com)
 - [ ] Accessability considerations as per [a11y](https://reactjs.org/docs/accessibility.html)
@@ -93,4 +95,4 @@ This deploys the project to [https://kukulaka.github.io/](https://kukulaka.githu
 This runs the storbook instance at Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 ### `yarn lint` and `yarn format`
-This runs linters to format code. This is also ran as a predeploy hook
+This runs linters to format code. This is also ran as a predeploy hook.
