@@ -5,6 +5,6 @@ import App from '../App';
 
 test('renders Input Components', () => {
   const { getByTestId } = render(<App />);
-    const button = getByTestId("input-container");
-    expect(button).toBeInTheDocument();
+    const input = getByTestId("input-container");
+    expect(input).toBeInTheDocument();
 });
