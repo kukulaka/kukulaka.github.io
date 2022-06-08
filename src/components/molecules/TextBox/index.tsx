@@ -111,7 +111,7 @@ const TextBox: React.FC<IProps> = ({ label }) => {
   }
 
   return (
-    <InputContainer>
+    <InputContainer data-testid="input-container">
     <InputWrapper>
       <Label htmlFor={label} aria-hidden={true} hiddenLabel={hide}>
         {label}

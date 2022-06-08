@@ -6,7 +6,7 @@ interface Props {
 }
 
  const Button: React.FC<Props> = ({ label, onClick }) => {
-  return <StyledButton onClick={onClick}>{label}</StyledButton>;
+  return <StyledButton  data-testid="button-needed" onClick={onClick}>{label}</StyledButton>;
 };
 
 export default Button

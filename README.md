@@ -74,7 +74,7 @@ Should DEFINETLY Mock the API call, but again, did not have time.
 
 
 ## Testing
-These can be found in the relevent component. Tests can be run using yarn test and yarn test:watch. Jest to run tests and Enzyme for mocking. 
+These can be found in the relevent component. Tests can be run using yarn test and yarn test:watch. Jest to run tests and react-testing-libraryfor mocking. 
 
 ## Available Scripts
 
